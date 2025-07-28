@@ -4,8 +4,9 @@ import random
 import math
 from datetime import datetime
 
-USERNAME = "akon@gmail.com"
-PASSWORD = "focus"
+BASE_URL = "https://fuel-truck-monitoring-backend-1.onrender.com"
+USERNAME = os.getenv("SIMULATOR_USER")
+PASSWORD = os.getenv("SIMULATOR_PASS")
 SENSOR_IDS = list(set(["SENSOR_ID11", "SENSOR_ID22", "SENSOR_ID44", "SENSOR_ID55", "SENSOR_ID66","SENSOR_ID77","SENSOR_ID88","SENSOR_ID99","SENSOR_ID100","SENSOR_ID21","SENSOR_ID22","SENSOR_ID123","SENSOR_ID24"]))
 CENTER_LAT = 23.6913
 CENTER_LNG = 85.2722
