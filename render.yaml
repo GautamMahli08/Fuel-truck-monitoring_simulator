@@ -1,0 +1,7 @@
+services:
+  - type: worker
+    name: fuel-simulator
+    runtime: python
+    buildCommand: ""
+    startCommand: "python sensor_simulator.py"
+    plan: free
